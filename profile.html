@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Royal Banl</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <head>
+        <h1 class="text-6xl font-extrabold text-center mt-20">
+            <span class="text-green-800">The </span>
+            <span class="text-red-800">Royal</span>
+            <span class="text-gray-600">Bank</span>
+        </h1>
+    </head>
+    <main>
+        <h1 class="text-center mt-10 font-extrabold text-5xl  text-gray-600"> Profile </h1>
+        <div class="grid grid-cols-3 gap-7 mx-auto w-9/12 text-white mt-20">
+            <div class="bg-gray-800 p-8 rounded-xl m-4">
+                <h1 class="text-3xl mb-2 font-bold">Deposit</h1>
+                <h2 class="text-5xl font-bold"> <span id="deposit-main-value">00</span> Taka</h2>
+            </div>
+            <div class="bg-red-800 p-8 rounded-xl m-4"> 
+                <h1 class="text-3xl mb-2 font-bold">Withdraw</h1>
+                <h2 class="text-5xl font-bold"><span id="deposit-main-value-with">00</span> Taka</h2>
+            </div>
+            <div class="bg-green-900 p-8 rounded-xl m-4">
+                <h1 class="text-3xl mb-2 font-bold">Balance</h1>
+                <h2 class="text-5xl font-bold"><span id="deposit-balance">00</span> Taka</h2>
+            </div>
+            
+           
+          </div>
+          <div class="grid grid-cols-2 gap-7 mx-auto w-9/12 text-white mt-10">
+            <div class="bg-gray-600 p-8 rounded-xl m-4">
+                <h1 class="text-5xl mb-2 font-bold mb-10">Balance Deposit</h1>
+                <div>
+                    <input id="deposit-input" class="mb-5 px-10 font-bold text-2xl py-1 rounded-md text-black" type="text" placeholder="Enter your Amount (TAKA)">
+                    <br>
+                    <button id="deposit" class="font-bold text-2xl bg-green-800 px-4 py-2 rounded-xl hover:bg-red-700">Deposit</button>
+                </div>
+            </div>
+            <div class="bg-gray-600 p-8 rounded-xl m-4">
+                <h1 class="text-5xl mb-2 font-bold mb-10">Balance Withdraw</h1>
+                <div>
+                    <input id="input-withdraw" class="text-black mb-5 px-10 font-bold text-2xl py-1 rounded-md " type="text" placeholder="Enter your Amount (TAKA)">
+                    <br>
+                    <button id="withdraw" class="font-bold text-2xl bg-green-800 px-4 py-2 rounded-xl hover:bg-red-700">Withdraw</button>
+                </div>
+            </div>
+
+          </div>
+    </main>
+    <script src="profile.js"></script>
+</body>
+</html>
